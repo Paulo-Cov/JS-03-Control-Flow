@@ -15,7 +15,7 @@ function weOpen (dayNumber, hourNumber){
 weOpen();
 function businessDay() {
     dayNumber = prompt("Tell me the day number")
-    dayNumber = (dayNumber%7)-prompt("Tell me the January 1st day number")
+    dayNumber = (dayNumber%7)+ parseInt(prompt("Tell me the January 1st day number"))
     if (dayNumber >= 1 && dayNumber <= 5){  
         dayCon= true;
     }
