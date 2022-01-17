@@ -15,7 +15,7 @@ function weOpen (dayNumber, hourNumber){
 weOpen();
 function businessDay() {
     dayNumber = prompt("Tell me the day number")
-    dayNumber = (dayNumber%7)+ parseInt(prompt("Tell me the January 1st day number"))
+    dayNumber = ((dayNumber%7)+ parseInt(prompt("Tell me the January 1st day number")))%7
     if (dayNumber >= 1 && dayNumber <= 5){  
         dayCon= true;
     }
@@ -31,7 +31,7 @@ function businessHour () {
     if (hourNumber >= 6 && hourNumber <=18 ){  
         hourCon = true;
     }
-    else if (hourNumber >= 0 || hourNumber <= 24){
+    else if (hourNumber >= 0 || hourNumber <= s4){
         hourCon =false
     }
     else{
@@ -39,3 +39,6 @@ function businessHour () {
     }
 
 }
+
+
+
